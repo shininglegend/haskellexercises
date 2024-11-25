@@ -153,5 +153,5 @@ lowerAndGreater n list =
             | n < h = countBiggerAndSmaller t n (b, s + 1)
             | otherwise = countBiggerAndSmaller t n (b, s)
         (bigger, smaller) = countBiggerAndSmaller list n (0, 0)
-    -- https://stackoverflow.com/questions/2784271/haskell-converting-int-to-string
+    -- https://stackoverflow.com/questions/2784271/haskell-converting-int-to-string 
     in show n ++ " is greater than " ++ show bigger ++ " elements and lower than " ++ show smaller ++ " elements"
